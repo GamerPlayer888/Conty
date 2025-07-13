@@ -38,16 +38,14 @@ PACKAGES=(
 	sdl2-compat lib32-sdl2-compat vkd3d lib32-vkd3d libgphoto2
 	openssl-1.1 lib32-openssl-1.1 libnm lib32-libnm
 	cabextract wget gamemode lib32-gamemode
-	# development
-	base-devel git meson mingw-w64-gcc cmake
 	# gaming
 	lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
 	legendary prismlauncher obs-studio umu-launcher
-	sunshine dolphin-emu
+	dolphin-emu
 	# extra
-	helix ttf-dejavu ttf-liberation mpv gimp blender
-	htop rtorrent imv file-roller openbox
-	yt-dlp minizip nautilus jre17-openjdk gnome-themes-extra ffmpegthumbnailer
+	ttf-dejavu ttf-liberation mpv gimp blender
+	htop rtorrent imv
+	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer
 )
 
 # If you want to install AUR packages, specify them in this variable
