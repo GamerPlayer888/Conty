@@ -44,7 +44,7 @@ PACKAGES=(
 	dolphin-emu
 	# extra
 	ttf-dejavu ttf-liberation mpv gimp blender
-	htop rtorrent imv
+	htop rtorrent imv xdg-desktop-portal-kde
 	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer
 )
 
