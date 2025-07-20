@@ -37,19 +37,19 @@ PACKAGES=(
 	gtk3 lib32-gtk3 vulkan-icd-loader lib32-vulkan-icd-loader
 	sdl2-compat lib32-sdl2-compat vkd3d lib32-vkd3d libgphoto2
 	openssl-1.1 lib32-openssl-1.1 libnm lib32-libnm
-	cabextract wget gamemode lib32-gamemode
+	cabextract wget gamemode lib32-gamemode mangohud
 	# gaming
 	lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
 	legendary prismlauncher obs-studio umu-launcher
 	dolphin-emu
 	# extra
 	ttf-dejavu ttf-liberation mpv gimp blender
-	htop rtorrent imv xdg-desktop-portal-kde
+	rtorrent imv
 	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer
 )
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(protonup-qt rare)
+AUR_PACKAGES=(protonup-qt rare obs-vkcapture-git vesktop cemu-bin)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
