@@ -41,15 +41,15 @@ PACKAGES=(
 	# gaming
 	lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
 	legendary prismlauncher obs-studio umu-launcher
-	dolphin-emu waydroid
+	dolphin-emu
 	# extra
-	ttf-dejavu ttf-liberation mpv gimp blender
-	rtorrent imv nautilus plasma-browser-integration
+	ttf-dejavu ttf-liberation mpv gimp blender genymotion
+	rtorrent imv nemo plasma-browser-integration
 	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer
 )
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(protonup-qt rare obs-vkcapture-git vesktop cemu-bin lsfg-vk-git)
+AUR_PACKAGES=(protonup-qt rare obs-vkcapture-git vesktop cemu-bin eden-preview-bin)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
