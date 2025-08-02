@@ -43,7 +43,7 @@ PACKAGES=(
 	legendary prismlauncher obs-studio umu-launcher
 	dolphin-emu
 	# extra
-	ttf-dejavu ttf-liberation mpv gimp blender genymotion
+	ttf-dejavu ttf-liberation mpv gimp blender
 	rtorrent imv nemo plasma-browser-integration
 	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer
 )
