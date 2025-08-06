@@ -44,12 +44,12 @@ PACKAGES=(
 	dolphin-emu
 	# extra
 	ttf-dejavu ttf-liberation mpv gimp blender
-	rtorrent imv nemo plasma-browser-integration
+	rtorrent imv nemo plasma-browser-integration tmux
 	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer
 )
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(protonup-qt rare obs-vkcapture-git vesktop cemu-bin eden-preview-bin)
+AUR_PACKAGES=(protonup-qt rare obs-vkcapture-git vesktop cemu-bin eden-preview-bin steamcmd steam-tui-bin)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
