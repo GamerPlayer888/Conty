@@ -43,9 +43,9 @@ PACKAGES=(
 	legendary prismlauncher obs-studio umu-launcher
 	dolphin-emu
 	# extra
-	ttf-dejavu ttf-liberation mpv gimp blender
-	rtorrent imv nemo tmux nemo-fileroller
-	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer
+	ttf-dejavu ttf-liberation mpv gimp blender tesseract tesseract-data-eng
+	rtorrent imv nemo tmux nemo-fileroller spectacle leptonica zxing-cpp
+	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer 
 )
 
 # If you want to install AUR packages, specify them in this variable
