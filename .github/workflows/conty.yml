@@ -33,7 +33,9 @@ jobs:
           chmod +x create-arch-bootstrap.sh create-conty.sh
           sudo ./create-arch-bootstrap.sh && ./create-conty.sh
       - name: Split files
-        run: split -b 2G conty.sh splitted/conty.sh.
+        run: |
+          mkdir splitted
+          split -b 2G conty.sh splitted/conty.sh.
       - name: Torrent Action
         uses: devopsx/action-torrent@v1
         with:
