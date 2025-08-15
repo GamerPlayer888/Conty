@@ -35,7 +35,7 @@ jobs:
       - name: Split files
         run: |
           mkdir splitted
-          split -b 2G conty.sh splitted/conty.sh.
+          split -b 1500M conty.sh splitted/conty.sh.
       - name: Torrent Action
         uses: devopsx/action-torrent@v1
         with:
