@@ -32,12 +32,8 @@ jobs:
 
           chmod +x create-arch-bootstrap.sh create-conty.sh
           sudo ./create-arch-bootstrap.sh && ./create-conty.sh
-      - name: file-splitter
-        uses: jsmvaldivia/file-splitter@0.0.2
-        with:
-          file-path: conty.sh
-          chunk-size: 2147483648
-          out-dir: splitted/
+      - name: Split files
+        run: split -b 2G conty.sh splitted/conty.sh.
       - name: Torrent Action
         uses: devopsx/action-torrent@v1
         with:
