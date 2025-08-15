@@ -32,11 +32,17 @@ jobs:
 
           chmod +x create-arch-bootstrap.sh create-conty.sh
           sudo ./create-arch-bootstrap.sh && ./create-conty.sh
+      - name: file-splitter
+        uses: jsmvaldivia/file-splitter@0.0.2
+        with:
+          file-path: conty.sh
+          chunk-size: 2147483648
+          out-dir: splitted/
       - name: Torrent Action
         uses: devopsx/action-torrent@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: conty.sh
+          files: splitted/*
       - name: Bump version and push tag
         id: bump
         uses: anothrNick/github-tag-action@v1
@@ -51,5 +57,5 @@ jobs:
           tag_name: ${{ steps.bump.outputs.new_tag }}
           fail_on_unmatched_files: true
           files: |
-           conty.sh
+           splitted/*
            torrents/*
