@@ -11,7 +11,7 @@ PACKAGES=(
 	# core
 	xorg-xwayland qt6-wayland wayland lib32-wayland qt5-wayland xorg-server-xephyr gamescope
 	# video
-	mesa lib32-mesa
+	mesa lib32-mesa cuda libxnvctrl libglvnd
 	vulkan-intel lib32-vulkan-intel
 	vulkan-icd-loader lib32-vulkan-icd-loader vulkan-mesa-layers
 	lib32-vulkan-mesa-layers libva-intel-driver lib32-libva-intel-driver
@@ -44,7 +44,7 @@ PACKAGES=(
 	dolphin-emu
 	# extra
 	ttf-dejavu ttf-liberation mpv gimp blender tesseract tesseract-data-eng
-	rtorrent imv nemo tmux nemo-fileroller spectacle leptonica zxing-cpp
+	rtorrent imv tmux spectacle leptonica zxing-cpp dolphin
 	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer 
 )
 
@@ -52,8 +52,8 @@ PACKAGES=(
 AUR_PACKAGES=(
     # wine
     protonup-qt
-	# gaming
-	rare cemu-bin eden-preview-bin lsfg-vk-bin
+	  # gaming
+	  rare cemu-bin eden-preview-bin lsfg-vk-bin
     # extra
     obs-vkcapture-git vesktop gpu-screen-recorder-gtk jdownloader2
 )
