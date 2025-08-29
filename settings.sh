@@ -11,7 +11,7 @@ PACKAGES=(
 	# core
 	xorg-xwayland qt6-wayland wayland lib32-wayland qt5-wayland xorg-server-xephyr gamescope
 	# video
-	mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon
+	mesa lib32-mesa cuda libxnvctrl libglvnd
 	vulkan-intel lib32-vulkan-intel
 	vulkan-icd-loader lib32-vulkan-icd-loader vulkan-mesa-layers
 	lib32-vulkan-mesa-layers libva-intel-driver lib32-libva-intel-driver
@@ -21,7 +21,7 @@ PACKAGES=(
 	freetype2 lib32-freetype2 libxft lib32-libxft
 	flex lib32-flex fluidsynth lib32-fluidsynth
 	libxrandr lib32-libxrandr xorg-xrandr libldap lib32-libldap
-	mpg123 lib32-mpg123 libxcomposite lib32-libxcomposite
+	libxcomposite lib32-libxcomposite
 	libxi lib32-libxi libxinerama lib32-libxinerama libxss lib32-libxss
 	libxslt lib32-libxslt openal lib32-openal
 	krb5 lib32-krb5 libpulse lib32-libpulse alsa-plugins
@@ -37,41 +37,41 @@ PACKAGES=(
 	gtk3 lib32-gtk3 vulkan-icd-loader lib32-vulkan-icd-loader
 	sdl2-compat lib32-sdl2-compat vkd3d lib32-vkd3d libgphoto2
 	openssl-1.1 lib32-openssl-1.1 libnm lib32-libnm
-	cabextract wget gamemode lib32-gamemode mangohud lib32-mangohud
-	# development
-	base-devel git meson mingw-w64-gcc cmake
+	cabextract wget gamemode lib32-gamemode mangohud
 	# gaming
 	lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
-	minigalaxy gamehub legendary prismlauncher bottles playonlinux obs-studio
-	retroarch retroarch-assets-ozone libretro-beetle-psx-hw
-	libretro-blastem libretro-bsnes libretro-dolphin duckstation-gpl
-	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia
-	libretro-parallel-n64 libretro-picodrive libretro-ppsspp
-	libretro-yabause pcsx2-avx-git
+	legendary prismlauncher obs-studio umu-launcher
+	dolphin-emu
 	# extra
-	nano ttf-dejavu ttf-liberation firefox mpv geany pcmanfm
-	htop qbittorrent speedcrunch gpicview file-roller openbox lxterminal
-	yt-dlp minizip nautilus genymotion jre17-openjdk gnome-themes-extra
- 	ffmpegthumbnailer tmux
+	ttf-dejavu ttf-liberation mpv gimp blender tesseract tesseract-data-eng
+	rtorrent imv tmux leptonica zxing-cpp dolphin fish firefox
+	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer 
 )
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(faugus-launcher-git)
+AUR_PACKAGES=(
+    # wine
+    protonup-qt
+  	# gaming
+  	rare cemu-bin eden-preview-bin
+    # extra
+    obs-vkcapture-git vesktop-bin gpu-screen-recorder-gtk jdownloader2 pixieditor-bin
+)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
 # better performance
 #
-# When this repository is enabled, most of the packages from the official
+# When this repository is enabled, most oftmux  packages from the official
 # Arch Linux repos will be replaced with their optimized versions from ALHP
 #
 # Set this variable to any value if you want to enable this repository
-ENABLE_ALHP_REPO=
+ENABLE_ALHP_REPO=1
 
 # Feature levels for ALHP. Available feature levels are 2 and 3
 # For level 2 you need a CPU with SSE4.2 instructions
 # For level 3 you need a CPU with AVX2 instructions
-ALHP_FEATURE_LEVEL=2
+ALHP_FEATURE_LEVEL=3
 
 # Locales to configure in the image
 LOCALES=(
@@ -133,7 +133,7 @@ SQUASHFS_COMPRESSOR_ARGUMENTS=(-b 1M -comp "${SQUASHFS_COMPRESSOR}" -Xcompressio
 #SQUASHFS_COMPRESSOR_ARGUMENTS=(-b 256K -comp "${SQUASHFS_COMPRESSOR}" -Xhc)
 
 # Set to any value to Use DwarFS instead of SquashFS
-USE_DWARFS=
+USE_DWARFS=yes
 DWARFS_COMPRESSOR_ARGUMENTS=(
 	-l7 -C zstd:level=19 --metadata-compression null
 	-S 22 -B 1 --order nilsimsa
