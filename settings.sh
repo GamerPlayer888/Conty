@@ -11,7 +11,7 @@ PACKAGES=(
 	# core
 	xorg-xwayland qt6-wayland wayland lib32-wayland qt5-wayland xorg-server-xephyr gamescope
 	# video
-	mesa lib32-mesa cuda libxnvctrl libglvnd
+	mesa lib32-mesa
 	vulkan-intel lib32-vulkan-intel
 	vulkan-icd-loader lib32-vulkan-icd-loader vulkan-mesa-layers
 	lib32-vulkan-mesa-layers libva-intel-driver lib32-libva-intel-driver
@@ -62,7 +62,7 @@ AUR_PACKAGES=(
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
 # better performance
 #
-# When this repository is enabled, most oftmux  packages from the official
+# When this repository is enabled, most of the packages from the official
 # Arch Linux repos will be replaced with their optimized versions from ALHP
 #
 # Set this variable to any value if you want to enable this repository
