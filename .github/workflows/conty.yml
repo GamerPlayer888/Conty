@@ -36,9 +36,19 @@ jobs:
         run: |
           mkdir splitted
           split -b 1500M conty.sh splitted/conty.sh.
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Delete old files
+        uses: mknejp/delete-release-assets@v1
         with:
-          name: Conty
-          path: splitted/*
+          token: ${{ github.token }}
+          tag: main
+          assets: '*.*'
+          fail-if-no-assets: false
+          fail-if-no-release: false
+        if: github.ref == 'refs/heads/master'
+        
+      - name: Release to main
+        uses: softprops/action-gh-release@v2.3.2
+        with:
+          files: splitted/*
+          tag_name: main
+        if: github.ref == 'refs/heads/master'
