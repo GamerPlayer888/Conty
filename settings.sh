@@ -44,7 +44,7 @@ PACKAGES=(
 	dolphin-emu
 	# extra
 	ttf-dejavu ttf-liberation mpv gimp blender tesseract tesseract-data-eng
-	rtorrent imv tmux leptonica zxing-cpp dolphin fish firefox
+	rtorrent imv tmux leptonica zxing-cpp dolphin fish firefox firefoxpwa passff-host
 	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer 
 )
 
