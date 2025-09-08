@@ -1,5 +1,4 @@
 # shellcheck shell=bash disable=2034
-
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
 # Apart from packages from the official Arch repos, you can also specify
@@ -12,7 +11,9 @@ PACKAGES=(
 	xorg-xwayland qt6-wayland wayland lib32-wayland qt5-wayland xorg-server-xephyr gamescope
 	# video
 	vulkan-icd-loader lib32-vulkan-icd-loader
-	vulkan-tools cuda
+	vulkan-tools mesa lib32-mesa vulkan-intel lib32-vulkan-intel
+	vulkan-mesa-layers lib32-vulkan-mesa-layers libva-intel-driver lib32-libva-intel-driver
+	intel-media-driver mesa-utils vulkan-tools libva-utils lib32-mesa-utils
 	# wine
 	wine-staging winetricks-git wine-nine wineasio
 	freetype2 lib32-freetype2 libxft lib32-libxft
