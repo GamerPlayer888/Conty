@@ -32,11 +32,10 @@ jobs:
 
           chmod +x create-arch-bootstrap.sh create-conty.sh
           sudo ./create-arch-bootstrap.sh && ./create-conty.sh
-      # For slow connection
-      # - name: Split files
-      #  run: |
-      #     mkdir splitted
-      #    split -b 1500M conty.sh splitted/conty.sh.
+      - name: Split files
+        run: |
+           mkdir splitted
+           split -b 1500M conty.sh splitted/conty.sh.
       - name: Delete old files
         uses: mknejp/delete-release-assets@v1
         with:
@@ -50,6 +49,6 @@ jobs:
       - name: Release to main
         uses: softprops/action-gh-release@v2.3.2
         with:
-          files: conty.sh
+          files: splitted/*
           tag_name: main
         if: github.ref == 'refs/heads/master'
