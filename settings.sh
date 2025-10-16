@@ -22,8 +22,8 @@ PACKAGES=(
 	libxcomposite lib32-libxcomposite
 	libxi lib32-libxi libxinerama lib32-libxinerama libxss lib32-libxss
 	libxslt lib32-libxslt openal lib32-openal
-	krb5 lib32-krb5 libpulse lib32-libpulse alsa-plugins
-	lib32-alsa-plugins alsa-lib lib32-alsa-lib gnutls lib32-gnutls
+	krb5 lib32-krb5 alsa-plugins
+	alsa-lib lib32-alsa-lib gnutls lib32-gnutls
 	giflib lib32-giflib gst-libav gst-plugin-pipewire gst-plugins-ugly
 	gst-plugins-bad gst-plugins-bad-libs
 	gst-plugins-base-libs lib32-gst-plugins-base-libs gst-plugins-base lib32-gst-plugins-base
