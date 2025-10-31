@@ -41,7 +41,7 @@ PACKAGES=(
 	legendary prismlauncher obs-studio umu-launcher
 	dolphin-emu
 	# extra
-	ttf-dejavu ttf-liberation mpv gimp blender tesseract tesseract-data-eng
+	ttf-dejavu ttf-liberation mpv gimp blender tesseract tesseract-data-eng kdenlive
 	rtorrent imv tmux leptonica zxing-cpp nautilus fish firefox passff-host pass-otp
 	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer file-roller
 )
