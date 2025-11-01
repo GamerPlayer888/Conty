@@ -92,7 +92,7 @@ install_aur_packages () {
 	fi
 
 	for i in {1..10}; do
-		if yes | yay --needed --removemake --builddir /home/aur -a -S ${aur_pkgs}; then
+		if yay --noconfirm --needed --removemake --builddir /home/aur -a -S ${aur_pkgs}; then
 			break
 		fi
 	done
