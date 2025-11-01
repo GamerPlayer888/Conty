@@ -37,7 +37,7 @@ PACKAGES=(
 	openssl-1.1 lib32-openssl-1.1 libnm lib32-libnm
 	cabextract wget gamemode lib32-gamemode mangohud
 	# gaming
-	lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
+	lutris python-protobuf steam steamtinkerlaunch
 	legendary prismlauncher obs-studio umu-launcher
 	dolphin-emu
 	# extra
@@ -51,7 +51,7 @@ AUR_PACKAGES=(
     # wine
     protonup-qt
   	# gaming
-  	rare cemu-bin eden-preview-bin gale-bin shadps4-pre-release-bin
+  	rare cemu-bin eden-preview-bin gale-bin shadps4-pre-release-bin steam-native-runtime
     # extra
     obs-vkcapture-git vesktop-bin materialgram-bin jdownloader2 pixieditor-bin
 )
