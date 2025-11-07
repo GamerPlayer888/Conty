@@ -103,6 +103,7 @@ LOCALES=(
 # Content of pacman mirrorrlist file before reflector is installed and used to fetch new one
 # shellcheck disable=2016
 MIRRORLIST='
+Server = https://damglador.github.io/$repo/$arch/
 Server = https://mirror1.sl-chat.ru/archlinux/$repo/os/$arch
 Server = https://mirror3.sl-chat.ru/archlinux/$repo/os/$arch
 Server = https://us.mirrors.cicku.me/archlinux/$repo/os/$arch
