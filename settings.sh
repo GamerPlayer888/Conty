@@ -44,6 +44,7 @@ PACKAGES=(
 	ttf-dejavu ttf-liberation mpv gimp blender tesseract tesseract-data-eng kdenlive
 	rtorrent imv tmux leptonica zxing-cpp nautilus fish firefox passff-host pass-otp
 	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer file-roller
+	containerd runc docker nvidia-container-toolkit
 )
 
 # If you want to install AUR packages, specify them in this variable
@@ -51,7 +52,7 @@ AUR_PACKAGES=(
     # wine
     protonup-qt
   	# gaming
-  	rare cemu-bin eden-preview-bin gale-bin shadps4-pre-release-bin
+  	rare cemu-bin eden-preview-bin gale-bin shadps4-pre-release-bin lsfg-vk-git
     # extra
     obs-vkcapture-git vesktop-bin materialgram-bin jdownloader2 pixieditor-bin
 )
