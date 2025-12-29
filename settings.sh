@@ -38,10 +38,13 @@ PACKAGES=(
 	cabextract wget gamemode lib32-gamemode mangohud
 	# gaming
 	lutris python-protobuf steam steamtinkerlaunch
-	legendary prismlauncher obs-studio umu-launcher
+	prismlauncher obs-studio umu-launcher
 	dolphin-emu
 	# extra
-	ttf-dejavu ttf-liberation mpv gimp blender tesseract tesseract-data-eng kdenlive
+	ttf-dejavu ttf-liberation 
+	adobe-source-han-serif-cn-fonts adobe-source-han-serif-jp-fonts adobe-source-han-serif-kr-fonts 
+	adobe-source-han-serif-otc-fonts adobe-source-han-serif-tw-fonts 
+	mpv blender tesseract tesseract-data-eng kdenlive
 	rtorrent imv tmux leptonica zxing-cpp nautilus fish firefox passff-host pass-otp
 	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer file-roller
 	gnome-network-displays obsidian
