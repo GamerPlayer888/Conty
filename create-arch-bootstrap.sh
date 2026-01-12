@@ -92,7 +92,7 @@ install_aur_packages () {
 	fi
 
 	for i in {1..10}; do
-		if yay --noconfirm --needed --removemake --builddir /home/aur -a -S ${aur_pkgs}; then
+		if yes | yay --needed --removemake --builddir /home/aur -a -S ${aur_pkgs}; then
 			break
 		fi
 	done
@@ -153,8 +153,15 @@ fi
 rm "${bootstrap}"/etc/locale.gen
 mv locale.gen "${bootstrap}"/etc/locale.gen
 
-rm "${bootstrap}"/etc/pacman.d/mirrorlist
-mv mirrorlist "${bootstrap}"/etc/pacman.d/mirrorlist
+if [ ! -f mirrorlist ]; then
+	generate_mirrorlist
+	reflector_used=0
+fi
+
+if [ -f mirrorlist ]; then
+	rm "${bootstrap}"/etc/pacman.d/mirrorlist
+	mv mirrorlist "${bootstrap}"/etc/pacman.d/mirrorlist
+fi
 
 {
 	echo
