@@ -55,7 +55,7 @@ AUR_PACKAGES=(
     # wine
     protonup-qt
   	# gaming
-  	rare cemu-bin eden-preview-bin gale-bin shadps4-pre-release-bin lsfg-vk-git
+  	rare cemu-bin eden-preview-bin gale-bin shadps4-pre-release-bin lsfg-vk-git hytale-launcher-bin
     # extra
     obs-vkcapture-git vesktop-bin materialgram-bin jdownloader2 pixieditor-bin
 )
