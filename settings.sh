@@ -47,7 +47,7 @@ PACKAGES=(
 	mpv blender tesseract tesseract-data-eng kdenlive
 	rtorrent imv tmux leptonica zxing-cpp nautilus fish firefox passff-host pass-otp
 	yt-dlp minizip jre17-openjdk gnome-themes-extra ffmpegthumbnailer file-roller
-	gnome-network-displays obsidian
+	gnome-network-displays obsidian scrcpy
 )
 
 # If you want to install AUR packages, specify them in this variable
